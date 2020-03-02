@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --main-blue: rgb(56, 135, 227);
+}
 html,
 body,
 #root{
@@ -18,7 +21,7 @@ body,
 #top-bar{
     width: 100%;
     height: 7.5%;
-    background-color: #276FBF;
+    background-color: var(--main-blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,4 +44,63 @@ body,
 }
 .nav-link{
     margin: 0 16px;
+}
+
+/* MAIN */
+
+#main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 214, 240);
+    position: absolute;
+}
+/* TESTMENU */
+
+#test-menu{
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 260px;
+}
+.test-menu-btn{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 11pt;
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    border: 1px solid #999;
+    border-bottom: none;
+}
+.test-menu-btn:hover{
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+.first{
+    border-top-right-radius: 4px;
+}
+.last{
+    border-bottom: 1px solid #999;
+    border-bottom-right-radius: 4px;
+}
+.test-name{
+    font-size: 13pt;
+    margin-left: 40px;
+    letter-spacing: 0.3px;
+}
+.test-desc{
+    margin-left: 40px;
+    color: #6e6e6e;
+}
+
+/* Typing Area */
+#typing-area-container{
+    width: 80%;
+    height: 60%;
+    background-color: white;
+    position: ;
 }
